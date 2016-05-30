@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="ejemplos.mis.menu.ContactoActivity"
+    android:orientation="vertical"
+    android:layout_weight="100">
+
+
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/TextInputLayout_nombreCompleto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_weight="10">
+
+
+        <EditText
+            android:id="@+id/EditText_nombreCompleto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/nombre_completo"
+            android:inputType="textPersonName"
+            android:singleLine="true"
+            android:layout_above="@+id/EditText_descripcionContacto"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/TextInputLayout_correoElectronico"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_weight="10">
+
+        <EditText
+            android:id="@+id/EditText_correoElectronico"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:layout_gravity="center_horizontal"
+            android:singleLine="true"
+            android:layout_alignBaseline="@+id/EditText_descripcionContacto"
+            android:layout_alignBottom="@+id/EditText_descripcionContacto"
+            android:layout_alignRight="@+id/TextInputLayout_nombreCompleto"
+            android:layout_alignEnd="@+id/TextInputLayout_nombreCompleto" />
+
+
+    </android.support.design.widget.TextInputLayout>
+
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/TextInputLayout_descripcionMensaje"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_weight="30">
+
+        <EditText
+            android:id="@+id/EditText_descripcionMensaje"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/contenido_del_mensaje"
+            android:singleLine="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_above="@+id/Button_Siguiente" />
+
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/boton_siguiente"
+        android:id="@+id/Button_Siguiente"
+        android:layout_weight="2.11"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+
+</LinearLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    cardview:cardCornerRadius="4dp"
+    cardview:cardElevation="10dp"
+    cardview:paddingEnd="@dimen/activity_horizontal_margin"
+
+    >
+    <LinearLayout
+        android:id="@+id/LinearLayout_cardview"
+        android:layout_width="200dp"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ImageView_mascota"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+
+        <TextView
+            android:id="@+id/TextView_codigoUnicoOculto"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text=""
+
+            />
+
+        <LinearLayout
+            android:id="@+id/LinearLayout_descripcion"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/TextView_nombre"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="Perro"
+                android:textSize="20sp"
+                />
+
+            <ImageView
+                android:id="@+id/ImageView_huesoAmarrillo"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/hueso_amarillo"
+                android:scaleType="centerInside"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

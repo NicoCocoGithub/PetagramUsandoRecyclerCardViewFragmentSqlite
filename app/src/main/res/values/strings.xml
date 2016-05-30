@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Petagram </string>
+    <string name="action_contacto">Contacto</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="action_acerca_de">Acerca De</string>
+
+
+    <string name="nombre_completo">Tu nombre</string>
+    <string name="email">Correo Electronico</string>
+    <string name="contenido_del_mensaje"> Descripción del Mensaje</string>
+    <string name="boton_siguiente"> Enviar mensaje</string>
+
+    <string name="te_olvidaste_nombre"> No te olvides del Nombre</string>
+    <string name="te_olvidaste_email"> No te olvides del Correo Electronico</string>
+
+
+</resources>
